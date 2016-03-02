@@ -1,0 +1,186 @@
+### File header must not be modified
+### This file must be encoded into UTF-8.
+### This table under LGPL
+### comments start with ### not single #
+### Derive from the format of SCIM Table, so you can modify the table from
+### scim-tables' table
+SCIM_Generic_Table_Phrase_Library_TEXT
+VERSION_1_0
+
+### Begin Table definition.
+BEGIN_DEFINITION
+
+### License
+LICENSE = LGPL
+
+### An unique id to distinguish this table among others.
+### Use uuidgen to generate this kind of id.
+UUID = 523b6543-424c-42da-b473-2bf121890fb6
+
+### A unique number indicates the version of this file.
+### For example the last modified date of this file.
+### This number must be less than 2^32.
+### Just make your table version-able
+SERIAL_NUMBER = 20150229
+
+### ICON can be any format as long as your pygtk can recognized
+### the most widely ones are "png" and "svg", letter one is recommended
+#ICON = ibus-table.svg
+
+### The symbol to be displayed in IM switchers
+SYMBOL = Ⲁ
+
+### The default name of this table, this is needed
+NAME = Coptic
+
+
+### Description
+DESCRIPTION = Coptic engine table for IBus Table.
+
+### Supported languages of this table
+### sigle "zh_CN" just be recognized as zh_CN,
+### but "zh_CN, zh_HK" or more zh_XX will be recognized as zh;
+### and "en_US, zh_CN" will be just ignored.
+LANGUAGES = cop
+
+### The author of this table
+AUTHOR = Scott A. Williams <scott@avaristoavanim.com>"
+
+### Prompt string to be displayed in the status area, CN will be replaced by
+### the gettext tools in runtime as 中.
+STATUS_PROMPT = CPT
+
+### Valid input chars.
+VALID_INPUT_CHARS = abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ<>;'/?
+
+### Layout
+LAYOUT = us
+
+### The max number of input keys for every phrase or character.
+MAX_KEY_LENGTH = 2
+
+### Use auto_commit mode as default
+AUTO_COMMIT = TRUE
+
+### Automatically selects the first phrase when typing
+AUTO_SELECT = FALSE
+
+### Use full width punctuation by default
+DEF_FULL_WIDTH_PUNCT = FALSE
+### Not use full width letter by default
+DEF_FULL_WIDTH_LETTER = FALSE
+
+### Whether user are allow to define phrase, default is true
+### You have to define the word construction rules below.
+### For input methods which do not input phrases, set this to False
+USER_CAN_DEFINE_PHRASE = FALSE
+
+### Whether support PinYin Mode, default is true.
+### this feature is just for Chinese, set it to False if your IM is not
+### Chinese.
+PINYIN_MODE = FALSE
+
+### If true then the phrases' frequencies will be adjusted dynamically
+### according your using frequency.
+DYNAMIC_ADJUST = FALSE
+
+### Some characters whose frequencies should be fix all the time, e.g. 
+### some punctuations
+### NO_CHECK_CHARS = 
+
+### Rules for constructing user defined phrase
+### "ce" stands for "ci equal", a Chinese English :), means "phrase length
+### equal to", thus ce2 -> phrase length equal to 2; and "ca" means "phrase
+### length equal or above", so ca4 -> phrase length equal or above 4.
+### p21 -> the 1st key of 2nd character in the phrase, and so on.
+### Each rule separate via ";". 
+### Example below is a complete rule-set, 
+### becuase [2,2] ∩ [3,3] ∩ [4,+∞] = [2,+∞], which is the range of length
+### of phrase. This have to be satisfied if you need ibus-table to build up
+### your own inputed phrase via your daily using.
+### RULES = ce2:p11+p12+p21+p22;ce3:p11+p21+p22+p31;ca4:p11+p21+p31+p41
+
+### The key strokes to page up the lookup table.
+### PAGE_UP_KEYS = Page_Up,KP_Page_Up,minus,comma
+
+### The key strokes to page down.
+### PAGE_DOWN_KEYS = Page_Down,KP_Page_Down,equal,period
+
+### The key strokes to select candidiate phrases.
+### Usually "1,2,3,4,5,6,7,8,9" but if this conflicts with
+### characters one wants to use for input one can also
+### use something like “F1,F2,F3,F4,F5,F6,F7,F8,F9”
+SELECT_KEYS = 1,2,3,4,5,6,7,8,9
+
+### The default orientation of the candidate list
+### TRUE means the candidate list is vertical, FALSE means it is vertical
+ORIENTATION=TRUE
+
+END_DEFINITION
+
+### Begin Table data.
+### Format of every line whose formated in "input_keys\tphrase\tfreq\n" is an
+### entry.
+### From left to right, the 1st column are the input key combination that you
+### entered via keyboard; the 2nd column are presented character or phrase of
+### the key combination you want; the 3rd column are frequency of the character
+### or phrase.
+BEGIN_TABLE
+A	Ⲁ	1
+a	ⲁ	1
+B	Ⲃ	1
+b	ⲃ	1
+G	Ⲅ	1
+g	ⲅ	1
+D	Ⲇ	1
+d	ⲇ	1
+E	Ⲉ	1
+e	ⲉ	1
+Z	Ⲍ	1
+z	ⲍ	1
+<	ⲏ	1
+Y	Ⲑ	1
+y	ⲑ	1
+I	Ⲓ	1
+i	ⲓ	1
+K	Ⲕ	1
+k	ⲕ	1
+L	Ⲗ	1
+l	ⲗ	1
+M	Ⲙ	1
+m	ⲙ	1
+N	Ⲛ	1
+n	ⲛ	1
+X	Ⲝ	1
+x	ⲝ	1
+O	Ⲟ	1
+o	ⲟ	1
+P	Ⲡ	1
+p	ⲡ	1
+R	Ⲣ	1
+r	ⲣ	1
+S	Ⲥ	1
+s	ⲥ	1
+T	Ⲧ	1
+t	ⲧ	1
+U	Ⲩ	1
+u	ⲩ	1
+F	Ⲫ	1
+f	ⲫ	1
+Q	Ⲭ	1
+q	ⲭ	1
+C	Ⲯ	1
+c	ⲯ	1
+W	Ⲱ	1
+w	ⲱ	1
+?	Ϣ	1
+/	ϣ	1
+V	Ϥ	1
+v	ϥ	1
+H	Ϩ	1
+h	ϩ	1
+J	Ϫ	1
+j	ϫ	1
+;	ϯ	1
+>	ϭ	1
+END_TABlE
