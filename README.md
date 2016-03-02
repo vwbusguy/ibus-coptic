@@ -13,7 +13,7 @@ Sahidic is dialect of Coptic found in Upper Egypt and was the language used by e
 I've largely followed Greek keyboard paradigms, with some phonetic exceptions.  For instance, 'h' returns ϩ instead of ⲏ.  
 
 ## Dependencies
-This keyboard is based on generating an ibus table.  Therefore, you will need a system that uses ibus for managing input (ie, most modern Linux distrubitions).  
+This keyboard is based on generating an ibus table.  Therefore, you will need a system that uses ibus for managing input (ie, most modern Linux distributions).  
 
 You will need to install:
 * ibus-setup
