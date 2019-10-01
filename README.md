@@ -1,5 +1,5 @@
 # ibus-coptic
-Unicode Ibus keyboard input for Sahidic Coptic for Linux systems
+Unicode Ibus keyboard input for Sahidic Coptic for Linux systems.  This is packaged as a RPM for yum/dnf via [COPR Repository](https://copr.fedorainfracloud.org/coprs/vwbusguy/ibus-coptic/).
 
 ## Why a Coptic keyboard?
 This is not a font package, but a keyboard.  It can use any unicode font that includes Coptic characters, such as [Noto Sans Coptic](https://www.google.com/get/noto/#sans-copt).
